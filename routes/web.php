@@ -13,4 +13,4 @@
 
 Route::get('/', "HomeController@index");
 
-Route::post("/contact-us/new", "HomeController@createContactUsMessage");
+Route::post('/contact-us/new', 'HomeController@createContactUsMessage');

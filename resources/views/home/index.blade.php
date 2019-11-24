@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>BYTEFORCE | CTOaaS</title>
     <meta name="description" content="Our CTOaaS is a service which provides technological expertise from a CTO role in a pay-what-you-need modular model. You can choose what services are required from the CTOaaS for your business."/>
 
@@ -226,25 +227,25 @@
                     <div class="title-header mb-3">CONTACT US</div>
                     <div class="form-group">
                         <label>Message</label>
-                        <textarea name="message" class="form-control" rows="5"></textarea>
+                        <textarea id="contactMessage" class="form-control" rows="5"></textarea>
                     </div>
                     <div class="drow evenly">
                         <div>
                             <div class="form-group">
                                 <label>Name</label>
-                                <input name="name" type="text" class="form-control" placeholder="Enter name">
+                                <input id="contactName" type="text" class="form-control" placeholder="Enter name">
                             </div>
                         </div>
                         <div>
                             <div class="form-group">
                                 <label>Email</label>
-                                <input name="email" type="email" class="form-control" placeholder="Enter email">
+                                <input id="contactEmail" type="email" class="form-control" placeholder="Enter email">
                                 <small class="form-text text-muted">We dont share your email to anyone.</small>
                             </div>
                         </div>
                     </div>
                     <div class="send-wrapper">
-                        <div class="bttn">Send</div>
+                        <input type="button" class="bttn" id="btnSendContactUs" value="Send">
                     </div>
                 </div>
             </div>
@@ -263,6 +264,12 @@
             }
         );
 
+        $.ajaxSetup({
+            headers: {
+                "X-CSRF_TOKEN": $('meta[name="csrf-token"]').attr("content")
+            }
+        });
+
         $("#btnmodal").click(function(){
             $(".modal").css("display","block");
         });
@@ -273,6 +280,34 @@
             if($(e.target).is(".modal")){
                 $(".modal").css("display","none");
             }
+        });
+        $("#btnSendContactUs").click(function (e) {
+            var button = $(this);
+            button.val("Sending...");
+            button.attr("disabled", true);
+
+            $.ajax({
+                type: "POST",
+                contentType: 'application/json',
+                url: "/contact-us/new",
+                dataType: "json",
+                data: JSON.stringify({
+                    "contactName": $("#contactName").val(),
+                    "contactEmail": $("#contactEmail").val(),
+                    "contactMessage": $("#contactMessage").val()
+                }),
+                success: function (json) {
+                    console.log("success");
+                    button.val("Send");
+                    button.attr("disabled", false);
+                },
+                error: function (xhr, status, error) {
+                    console.log("error, status code: "+ xhr.status);
+                    console.log(xhr.responseText);
+                    button.val("Send");
+                    button.attr("disabled", false);
+                }
+            });
         });
     });
 
