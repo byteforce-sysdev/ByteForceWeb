@@ -333,7 +333,6 @@
                 });
             }
         });
-//        $("landing-background").css("height",window.innerHeight + "px");
         
     });
     
