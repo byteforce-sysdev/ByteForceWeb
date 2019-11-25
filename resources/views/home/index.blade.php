@@ -316,15 +316,12 @@
                         "contactMessage": contactMessage
                     }),
                     success: function (json) {
-                        console.log("success");
                         button.val("Sent");
                         button.attr("disabled", true);
                     },
                     error: function (xhr, status, error) {
                         messageError.css("visibility","visible");
                         messageError.text("Something went wrong. Please try again later.");
-                        console.log("error, status code: "+ xhr.status);
-                        console.log(xhr.responseText);
                         button.val("Send");
                         button.attr("disabled", false);
                     }
