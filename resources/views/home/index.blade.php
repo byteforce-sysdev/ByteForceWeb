@@ -62,9 +62,7 @@
             </div>
             <div class="bttn" id="btnmodal">Contact Us</div>
         </div>
-    </div>
 
-   
         <div class="wave1" >
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1350 402"><defs><style>.cls-1{fill:#fefefe;}</style></defs><title>ByteForce</title><g id="Layer_2" data-name="Layer 2"><g id="OBJECTS"><path class="cls-1" d="M1350,402H0V377.23a451.76,451.76,0,0,1,32-33.42,45.08,45.08,0,0,1,3.55-3.9c14.41-13.43,31-24,48.62-33.12C129.29,283.46,178,271,228.67,264.94c25.3-3,50.69-4.32,76.19-4.93,15.65-.37,31.31-1,46.94-.57,26.45.78,52.93.79,79.37,1.92,22.62,1,45.25,1.4,67.88,1.93,18.48.43,37,.83,55.44.77,44.88-.15,89.52-3.36,133.73-10.77,29.81-5,58.45-14.09,86.71-24.21,45.67-16.34,89-37.42,131.55-59.91,43.44-22.94,85.77-47.69,129.18-70.66,53.56-28.32,108.28-54.19,166.81-72A640.25,640.25,0,0,1,1325,2c6.14-.62,22-2,25-2"/></g></g></svg>
         </div>
@@ -77,6 +75,9 @@
         <div class="img-phone">
             <img src="{{ asset('images/phone.svg') }}" alt="technology web apps">
         </div>
+
+    </div>
+
    
 
     <div class="content">
@@ -332,7 +333,7 @@
                 });
             }
         });
-        $("landing-background").css("height",window.innerHeight + "px");
+//        $("landing-background").css("height",window.innerHeight + "px");
         
     });
     

@@ -29,12 +29,13 @@ input{
 
 .landing-background{
   background-color: rgba(18,36,51,0.85);
-  height: 99vh;
+  height: 100%;
   min-height: -webkit-fill-available;
 }
 
 .back{
   background: transparent url('../images/back.jpg') no-repeat fixed center;
+  height: 100vh;
 }
 
 .stone{
