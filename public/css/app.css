@@ -473,6 +473,10 @@ input {
     display: none;
   }
 
+  .stone1 {
+    display: none;
+  }
+
   .chip {
     height: 300px;
     width: 300px;
