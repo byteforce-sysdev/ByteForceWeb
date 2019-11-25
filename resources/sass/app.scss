@@ -30,6 +30,7 @@ input{
 .landing-background{
   background-color: rgba(18,36,51,0.85);
   height: 99vh;
+  height: calc(var(--vh, 1vh) * 99);
 }
 
 .back{
@@ -108,6 +109,7 @@ input{
   background: yellowgreen;
   color: white;
   border-radius: 10px;
+  border: none;
 }
 
 #btnmodal{
@@ -160,7 +162,7 @@ input{
   margin: 0 auto;
   position: relative;
   text-align: center;
-
+  overflow: hidden;
 }
 
 .centerized{
@@ -251,10 +253,11 @@ input{
   margin-bottom: 20px;
 }
 .rocket{
-  text-align: center
+  text-align: center;
+  margin-top: 10px;
 }
 .skyline{
-  text-align: center
+  text-align: center;
 }
 
 .our-works{

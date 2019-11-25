@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>BYTEFORCE | CTOaaS</title>
-    <meta name="description" content="Our CTOaaS is a service which provides technological expertise from a CTO role in a pay-what-you-need modular model. You can choose what services are required from the CTOaaS for your business."/>
+    <meta name="description" content="Our CTOaaS based in Jakarta is a service which provides technological expertise from a CTO role in a pay-what-you-need modular model. You can choose what services are required from the CTOaaS for your business."/>
 
     <!-- ICON -->
     <link rel="apple-touch-icon" sizes="57x57" href="{{ asset('images/icon/apple-icon-57x57.png') }}">
@@ -137,9 +137,11 @@
             <div class=" centerized row">
                 <div class="chip cleft" data-aos="fade-right">
                     <div class="cleftin">
-                        Startup with innovative ideas and
-                        funds available for product
-                        development
+                        <div>
+                            Startup with innovative ideas and
+                            funds available for product
+                            development
+                        </div>
                         <div class="rocket">
                             <img src="{{ asset('images/rocket.svg') }}" alt="startup">
                         </div>
@@ -149,9 +151,11 @@
                     <div class="skyline">
                         <img src="{{ asset('images/skyline.svg') }}" alt="startup">
                     </div>
-                    Mature companies planning for
-                    in-house products to bring new
-                    revenue streams
+                    <div>
+                        Mature companies planning for
+                        in-house products to bring new
+                        revenue streams
+                    </div>
                 </div>
             </div>
         </div>
@@ -328,6 +332,11 @@
                 });
             }
         });
+    });
+
+    window.addEventListener('resize', () => {
+        let vh = window.innerHeight * 0.01;
+        document.documentElement.style.setProperty('--vh', `${vh}px`);
     });
 
 </script>
