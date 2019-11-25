@@ -310,6 +310,7 @@
                     url: "/contact-us/new",
                     dataType: "json",
                     data: JSON.stringify({
+                        "_token": $('meta[name="csrf-token"]').attr("content"),
                         "contactName": contactName,
                         "contactEmail": contactEmail,
                         "contactMessage": contactMessage
