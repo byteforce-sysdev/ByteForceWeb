@@ -35,7 +35,8 @@ input{
 
 .back{
   background: transparent url('../images/back.jpg') no-repeat fixed center;
-  height: 100vh;
+  height: 99vh;
+  position: relative;
 }
 
 .stone{
@@ -420,11 +421,21 @@ input{
   .img-phone{
     display: none;
   }
+  .back{
+    height:85vh;
+  }
+  .wave1{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
   .wave2{
     bottom: 14px;
+    width: 100%;
   }
   .wave3{
     bottom: 16px;
+    width: 100%;
   }
   .works-grid{
     width:300px;
@@ -440,6 +451,9 @@ input{
     overflow-x:hidden;
   }
   .stone{
+    display: none;
+  }
+  .stone1{
     display: none;
   }
   .chip{
