@@ -30,7 +30,6 @@ input{
 .landing-background{
   background-color: rgba(18,36,51,0.85);
   height: 99vh;
-  height: calc(var(--vh, 1vh) * 99);
 }
 
 .back{
@@ -480,6 +479,10 @@ input{
   .drow{
     flex-direction: column;
   }
+  .landing-background{
+    height: 570px;
+  }
+
 
 }
 
