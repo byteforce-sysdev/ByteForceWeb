@@ -333,6 +333,7 @@
             }
         });
     });
+    $('landing-background').height($(window).height()/2);
 
 </script>
 </body>
