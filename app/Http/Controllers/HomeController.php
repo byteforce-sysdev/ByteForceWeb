@@ -15,7 +15,33 @@ class HomeController extends Controller
     public function index() {
         return view(
             'home.index',
-            [ "partners" => [0,1,2,3,4,5] ]     // TODO: Placeholder Data
+            [ "partners" => array(
+                array(
+                    "weblink" => "https://primecareclinic.co.id",
+                    "title" => "Primecare Clinic",
+                    "image" => asset("images/partners/partner-pcc.png")
+                ),
+                array(
+                    "weblink" => "https://fiberstar.co.id",
+                    "title" => "FiberStar",
+                    "image" => asset("images/partners/partner-fs.png")
+                ),
+//                array(
+//                    "weblink" => "https://emoona.byteforceid.com",
+//                    "title" => "Emoona Studio",
+//                    "image" => asset("images/partners/partner-emoona.jpg")
+//                ),
+                array(
+                    "weblink" => "http://grandabehotel.com",
+                    "title" => "Grand Abe Hotel",
+                    "image" => asset("images/partners/partner-gah.png")
+                ),
+                array(
+                    "weblink" => "http://akuato.com",
+                    "title" => "Akuato",
+                    "image" => asset("images/partners/partner-akuato.png")
+                ),
+            )]     // TODO: Placeholder Data
         );
     }
 

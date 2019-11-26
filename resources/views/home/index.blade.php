@@ -195,9 +195,11 @@
                 <div class="title-header">Our Past Partnerships</div>
                 <div class="row centerized">
                     @for ($i = 0; $i < count($partners); $i++)
-                        <div class="partner-box" data-aos="fade-up" data-aos-delay="{{50* $i}}">
-                            {{-- TODO: Past partnership info here --}}
-                        </div>
+                        <a href="{{ $partners[$i]["weblink"] }}">
+                            <div class="partner-box" data-aos="fade-up" data-aos-delay="{{50* $i}}" style="background: url('{{ $partners[$i]["image"] }}')">
+                            </div>
+                        </a>
+
                     @endfor
                 </div>
             </div>

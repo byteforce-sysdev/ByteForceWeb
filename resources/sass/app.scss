@@ -300,6 +300,9 @@ input{
   height: 200px;
   width:  200px;
   background: #122433;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
   margin: 5px 5px;
 }
 
