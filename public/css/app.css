@@ -56,13 +56,13 @@ input {
 
 .wave1 {
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   width: 100%;
 }
 
 .wave2 {
   position: absolute;
-  bottom: 43px;
+  bottom: 42px;
   right: 0;
   width: 98%;
   opacity: 0.3;
@@ -70,7 +70,7 @@ input {
 
 .wave3 {
   position: absolute;
-  bottom: 47px;
+  bottom: 46px;
   right: 0;
   width: 98%;
   opacity: 0.1;
@@ -116,16 +116,29 @@ input {
   color: white;
   border-radius: 10px;
   border: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
-#btnmodal {
+.btnmodal {
   position: relative;
   z-index: 100;
   margin-top: 15px;
 }
 
+.btn-modal-fixed {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: visibility 0s, opacity 0.3s;
+  transition: visibility 0s, opacity 0.3s;
+}
+
 .bttn:hover {
-  background: #122433;
+  background: #7ba428;
   color: #ffffff;
 }
 
@@ -347,11 +360,40 @@ input {
   height: 100%;
   overflow: auto !important;
   background-color: rgba(0, 0, 0, 0.4);
-  padding-top: 80px;
+}
+
+@-webkit-keyframes slidein {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+
+  to {
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes slidein {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+
+  to {
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
 }
 
 .inside-modal {
-  position: relative;
+  position: absolute;
   margin: auto;
   width: 60%;
   background: white;
@@ -360,6 +402,10 @@ input {
           animation: slidein 0.4s ease-in-out;
   min-height: 450px;
   border-radius: 10px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .drow {
@@ -411,30 +457,6 @@ input {
   float: right;
 }
 
-@-webkit-keyframes slidein {
-  from {
-    top: -300px;
-    opacity: 0;
-  }
-
-  to {
-    top: 0;
-    opacity: 1;
-  }
-}
-
-@keyframes slidein {
-  from {
-    top: -300px;
-    opacity: 0;
-  }
-
-  to {
-    top: 0;
-    opacity: 1;
-  }
-}
-
 .close {
   font-size: 28px !important;
   padding-top: 20px;
@@ -458,17 +480,17 @@ input {
 
   .wave1 {
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     width: 100%;
   }
 
   .wave2 {
-    bottom: 14px;
+    bottom: 10px;
     width: 100%;
   }
 
   .wave3 {
-    bottom: 16px;
+    bottom: 12px;
     width: 100%;
   }
 

@@ -58,7 +58,10 @@
                     from a CTO role in a pay-what-you-need modular model.
                     You can choose what services are required from the CTOaaS
                     for your business.
-                    <div class="bttn" id="btnmodal">Contact Us</div>
+                    <div class="bttn btnmodal" id="relativeButton">Contact Us</div>
+
+                    <div class="bttn btnmodal btn-modal-fixed" id="fixedButton">Contact Us</div>
+
                 </div>
             </div>
             
@@ -82,7 +85,7 @@
 
 
     <div class="content">
-        <div class="title-header">
+        <div class="title-header" id="our-solutions">
             Our Solutions
         </div>
         <div class="centerized push">
@@ -279,6 +282,23 @@
             }
         );
 
+        var fixedButton = $("#fixedButton");
+        var scrolledPastLanding = false;
+
+        $(document).on('scroll', function() {
+            if($(this).scrollTop() >= $('#our-solutions').position().top){
+                fixedButton.css("visibility", "visible");
+                fixedButton.css("opacity", 1);
+                scrolledPastLanding = true;
+            } else if ($(this).scrollTop() < $('#our-solutions').position().top && scrolledPastLanding){
+                scrolledPastLanding = false;
+                fixedButton.css("opacity", 0);
+                setTimeout(function() {
+                    fixedButton.css("visibility", "hidden");
+                }, 300);
+            }
+        });
+
         $.ajaxSetup({
             headers: {
                 "X-CSRF_TOKEN": $('meta[name="csrf-token"]').attr("content")
@@ -288,7 +308,7 @@
         var messageError = $("#messageError");
         messageError.css("visibility","hidden");
 
-        $("#btnmodal").click(function(){
+        $(".btnmodal").click(function(){
             $(".modal").css("display","block");
         });
         $(".close").click(function(){
