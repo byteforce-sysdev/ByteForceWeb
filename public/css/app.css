@@ -278,7 +278,7 @@ input {
 }
 
 .cleftin {
-  margin-top: 90px;
+  margin-top: 70px;
 }
 
 .cleftin .left-indent {
@@ -315,8 +315,7 @@ input {
 }
 
 .partner-box {
-  height: 200px;
-  width: 200px;
+  height: 130px;
   background: #122433;
   background-size: contain !important;
   background-repeat: no-repeat !important;
