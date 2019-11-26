@@ -245,6 +245,9 @@ input{
 .cleftin{
   margin-top: 90px;
 }
+.cleftin .left-indent {
+  margin-left: 20px;
+}
 
 .rocket img{
   height: 170px;
@@ -256,7 +259,7 @@ input{
 }
 .rocket{
   text-align: center;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 .skyline{
   text-align: center;
@@ -291,6 +294,8 @@ input{
   font-size: 26px;
   color:#122433;
   font-family: robotmed;
+  margin-top: 15px;
+  margin-bottom: 25px;
 }
 
 .footer{
@@ -464,8 +469,11 @@ input{
   .chip img{
     height: 120px;
   }
-  .cleftin{
-    margin-top: 70px;
+  .cleftin {
+    margin-top: 50px;
+  }
+  .cleftin .left-indent {
+    margin-left: 10px;
   }
   .box-feature:nth-child(even){
     margin-top: 0px;
