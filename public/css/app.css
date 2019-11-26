@@ -603,6 +603,12 @@ input {
     -webkit-box-direction: normal;
             flex-direction: column;
   }
+
+  .drow.drow-override {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-direction: row;
+  }
 }
 
 @media screen and (max-width: 375px) {

@@ -547,6 +547,9 @@ input{
   .drow{
     flex-direction: column;
   }
+  .drow.drow-override{
+    flex-direction: row;
+  }
 
 }
 

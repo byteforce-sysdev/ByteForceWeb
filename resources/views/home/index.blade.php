@@ -58,7 +58,7 @@
                     from a CTO role in a pay-what-you-need modular model.
                     You can choose what services are required from the CTOaaS
                     for your business.
-                    <div class="drow">
+                    <div class="drow drow-override">
                         <div class="bttn btnmodal" id="relativeButton">Contact Us</div>
                         <div class="bttn btn-wa">
                             <a href="https://wa.me/6285714382715" target="_blank">
@@ -133,23 +133,23 @@
 
         <div class="benefit">
             <div class="title-header">
-                Reasons to Choose Us
+                Why Choose Us
             </div>
             <div class="row">
                 <div class="col-md-4 benefit-box"  data-aos="fade-up">
-                    <img src="{{ asset('images/main.svg') }}" alt="Maintenance">
+                    <img src="{{ asset('images/modules.svg') }}" alt="Maintenance">
                     <div class="benefit-desc">
                         A pay-for-what-you-need model fit for startups
                     </div>
                 </div>
                 <div class="col-md-4 benefit-box"  data-aos="fade-up" data-aos-delay="50">
-                    <img src="{{ asset('images/main.svg') }}" alt="Maintenance">
+                    <img src="{{ asset('images/select.svg') }}" alt="Maintenance">
                     <div class="benefit-desc">
                         Make sure your business utilize the correct tech to meet your goals and minimise tech risks in the future
                     </div>
                 </div>
                 <div class="col-md-4 benefit-box"  data-aos="fade-up" data-aos-delay="100">
-                    <img src="{{ asset('images/main.svg') }}" alt="Maintenance">
+                    <img src="{{ asset('images/team-tech.svg') }}" alt="Maintenance">
                     <div class="benefit-desc">
                         Access to a team of tech savvy enthusiasts
                     </div>
