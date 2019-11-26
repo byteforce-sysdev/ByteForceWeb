@@ -4,8 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>BYTEFORCE | CTOaaS</title>
-    <meta name="description" content="Our CTOaaS based in Jakarta is a service which provides technological expertise from a CTO role in a pay-what-you-need modular model. You can choose what services are required from the CTOaaS for your business."/>
+    <title>BYTEFORCE | CTOaaS | Jakarta</title>
+    <meta name="description" content="We are a CTO-as-a-service company in Jakarta. We provide technological expertise from a CTO role in a pay-what-you-need modular model."/>
 
     <!-- ICON -->
     <link rel="apple-touch-icon" sizes="57x57" href="{{ asset('images/icon/apple-icon-57x57.png') }}">
@@ -107,7 +107,7 @@
             <div class="row">
                 <div class="box-feature" data-aos="fade-down">
                     <img src="{{ asset('images/team.svg') }}" alt="CTO">
-                    <div>IT consulting</div>
+                    <div>IT Consulting</div>
                 </div>
                 <div class="box-feature" data-aos="fade-up">
                     <img src="{{ asset('images/data.svg') }}" alt="Web development">
@@ -146,7 +146,7 @@
                 <div class="col-md-4 benefit-box"  data-aos="fade-up" data-aos-delay="50">
                     <img src="{{ asset('images/select.svg') }}" alt="Maintenance">
                     <div class="benefit-desc">
-                        Make sure your business utilize the correct tech to meet your goals and minimise tech risks in the future
+                        Make sure you utilize the correct tech and minimise tech risks in the future
                     </div>
                 </div>
                 <div class="col-md-4 benefit-box"  data-aos="fade-up" data-aos-delay="100">
@@ -158,7 +158,7 @@
             </div>
         </div>
 
-        <div class="title-header">Who This Service is for</div>
+        <div class="title-header">Who This Service is For</div>
         <div class="whofor">
             <div class=" centerized row">
                 <div class="chip cleft" data-aos="fade-right">
@@ -193,7 +193,7 @@
         @if (count($partners) > 0)
             <div class="our-works">
                 <div class="title-header">Our Past Partnerships</div>
-                <div class="row centerized">
+                <div class="gridc centerized">
                     @for ($i = 0; $i < count($partners); $i++)
                         <div class="partner-box" data-aos="fade-up" data-aos-delay="{{50* $i}}">
                             {{-- TODO: Past partnership info here --}}
@@ -205,23 +205,23 @@
 
         <div class="our-team">
             <div class="title-header">
-                Our Team
+                Our Team Members
             </div>
             <div class="row centerized">
                 <div class="circle" data-aos="fade-up" data-aos-delay="50">
                     <img src="{{ asset('images/jef.png') }}" alt="jeffry">
-                    <div>Jeffry</div>
-                    <div>Position</div>
+                    <div class="font-weight-bold">Jeffry</div>
+                    <div>System Architect</div>
                 </div>
                 <div class="circle" data-aos="fade-up" data-aos-delay="50">
                     <img src="{{ asset('images/dav.png') }}" alt="david">
-                    <div>David</div>
-                    <div>Position</div>
+                    <div class="font-weight-bold">David</div>
+                    <div>UI Developer</div>
                 </div>
                 <div class="circle" data-aos="fade-up" data-aos-delay="50">
                     <img src="{{ asset('images/ki.png') }}" alt="ridzki">
-                    <div>Ridzki</div>
-                    <div>Position</div>
+                    <div class="font-weight-bold">Ridzki</div>
+                    <div>UX Developer</div>
                 </div>
             </div>
         </div>

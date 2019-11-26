@@ -213,7 +213,7 @@ input {
   height: 175px;
   width: 125px;
   box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.3);
-  margin: 0 20px;
+  margin: 0 15px;
   padding: 10px;
   padding-top: 35px;
   margin-bottom: 20px;
@@ -306,6 +306,12 @@ input {
 .our-works {
   margin-top: 150px;
   text-align: center;
+}
+
+.gridc {
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px;
+  gap: 10px;
 }
 
 .partner-box {
@@ -608,6 +614,10 @@ input {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
             flex-direction: row;
+  }
+
+  .gridc {
+    grid-template-columns: 200px;
   }
 }
 
