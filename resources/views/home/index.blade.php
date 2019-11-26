@@ -58,7 +58,21 @@
                     from a CTO role in a pay-what-you-need modular model.
                     You can choose what services are required from the CTOaaS
                     for your business.
-                    <div class="bttn btnmodal" id="relativeButton">Contact Us</div>
+                    <div class="drow">
+                        <div class="bttn btnmodal" id="relativeButton">Contact Us</div>
+                        <div class="bttn btn-wa">
+                            <a href="https://wa.me/6285714382715" target="_blank">
+                                <img src="{{ asset('images/whatsapp.svg') }}">
+                            </a>
+                        </div>
+                        <div class="bttn btn-email">
+                            <a href="mailto:reach@byteforceid.com" target="_blank">
+                                <img src="{{ asset('images/email.svg') }}">
+                            </a>
+                        </div>
+                    </div>
+
+
 
                     <div class="bttn btnmodal btn-modal-fixed" id="fixedButton">Contact Us</div>
 
@@ -220,6 +234,7 @@
             <div class="footer-content">
                 <div>BYTEFORCE 2019</div>
                 <div>reach@byteforceid.com</div>
+                <div class="whatsapp-span"><img src="{{ asset('images/whatsapp.svg') }}" alt="whatsapp"><span>(+62) 857-1438-2715</span></div>
                 <div class="social-icon">
                     <a href="https://www.instagram.com/byteforce.id/" target="_blank">
                         <img src="{{ asset('images/insta.svg') }}" alt="instagram">
