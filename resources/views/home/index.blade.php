@@ -58,9 +58,10 @@
                     from a CTO role in a pay-what-you-need modular model.
                     You can choose what services are required from the CTOaaS
                     for your business.
+                    <div class="bttn" id="btnmodal">Contact Us</div>
                 </div>
             </div>
-            <div class="bttn" id="btnmodal">Contact Us</div>
+            
         </div>
 
         <div class="wave1" >

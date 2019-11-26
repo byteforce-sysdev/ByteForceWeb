@@ -80,7 +80,7 @@ input{
   align-items: center;
   flex-direction: row;
   padding-top: 50px;
-  padding-left: 20%;
+  padding-left: 250px;
 }
 
 .title{
@@ -92,7 +92,7 @@ input{
 
 .ctoaas{
   color: white;
-  margin-left: 20%;
+  margin-left: 250px;
   margin-top: 70px;
   padding-right: 20px;
 
@@ -115,10 +115,9 @@ input{
 }
 
 #btnmodal{
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
+  position: relative;
   z-index: 100;
+  margin-top: 15px;
 }
 
 .bttn:hover{
@@ -137,7 +136,7 @@ input{
 
 .img-phone{
   position: absolute;
-  right: 17%;
+  right: 230px;
   top: 30%;
 }
 
@@ -482,6 +481,7 @@ input{
   }
   .ctoaas{
     margin-left: 30px;
+    margin-top: 20px;
   }
   .inside-modal{
     width: 90%;
