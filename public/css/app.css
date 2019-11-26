@@ -30,12 +30,14 @@ input {
 
 .landing-background {
   background-color: rgba(18, 36, 51, 0.85);
-  height: 99vh;
+  height: 100%;
   min-height: -webkit-fill-available;
 }
 
 .back {
   background: transparent url(/images/back.jpg?6ca2d7ff9566efe892f7c9268a48b90f) no-repeat fixed center;
+  height: 99vh;
+  position: relative;
 }
 
 .stone {
@@ -445,12 +447,24 @@ input {
     display: none;
   }
 
+  .back {
+    height: 85vh;
+  }
+
+  .wave1 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
   .wave2 {
     bottom: 14px;
+    width: 100%;
   }
 
   .wave3 {
     bottom: 16px;
+    width: 100%;
   }
 
   .works-grid {
