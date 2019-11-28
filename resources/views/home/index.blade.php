@@ -75,7 +75,7 @@
 
 
 
-                    <div class="bttn btnmodal btn-modal-fixed" id="fixedButton">Contact Us</div>
+                    <div class="bttn btnmodal btn-modal-fixed " id="fixedButton">Contact Us</div>
 
                 </div>
             </div>

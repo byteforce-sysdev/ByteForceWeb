@@ -119,6 +119,11 @@ input{
   transition: 0.3s;
 }
 
+.bttn.bttn-disabled {
+  pointer-events: none;
+  background-color: darkolivegreen;
+}
+
 .btnmodal{
   position: relative;
   z-index: 100;

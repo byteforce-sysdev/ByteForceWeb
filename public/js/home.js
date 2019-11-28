@@ -74,6 +74,7 @@ $(document).ready(function () {
                 }),
                 success: function (json) {
                     button.val("Sent");
+                    button.addClass("bttn-disabled");
                     button.attr("disabled", true);
                 },
                 error: function (xhr, status, error) {
