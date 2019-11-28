@@ -55,10 +55,12 @@
             <div class="ctoaas">
                 <div class="title">CTOaaS</div>
                 <div class="ctoaas-desc">
+                    <div class="desc-word">
                     Our CTOaaS is a service which provides technological expertise
                     from a CTO role in a pay-what-you-need modular model.
                     You can choose what services are required from the CTOaaS
                     for your business.
+                    </div>
                     <div class="drow drow-override">
                         <div class="bttn btnmodal" id="relativeButton">Contact Us</div>
                         <div class="bttn btn-wa">
@@ -72,8 +74,6 @@
                             </a>
                         </div>
                     </div>
-
-
 
                     <div class="bttn btnmodal btn-modal-fixed " id="fixedButton">Contact Us</div>
 
