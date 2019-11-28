@@ -129,7 +129,7 @@
         </div>
 
         <div class="stone">
-            <svg height="300px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 282.89 483"><defs><style>.cls-2{fill:url(#linear-gradient);}</style><linearGradient id="linear-gradient" x1="41.37" y1="143.67" x2="301.92" y2="253.84" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#233a53"/><stop offset="1" stop-color="#122433"/></linearGradient></defs><title>Asset 9</title><g id="Layer_2" data-name="Layer 2"><g id="OBJECTS"><path class="cls-2" d="M282,0l.85,483S203,474.49,123.36,402.79C36.21,324.34-47.35,194.22,31.56,111.26,111.85,26.84,282,0,282,0Z"/></g></g></svg>
+            <svg height="300px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 282.89 483"><defs><style>.cls-2{fill:url(#linear-gradient);}</style><linearGradient id="linear-gradient" x1="41.37" y1="143.67" x2="301.92" y2="253.84" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#233a53"/><stop offset="1" stop-color="#122433"/></linearGradient></defs><g id="Layer_2" data-name="Layer 2"><g id="OBJECTS"><path class="cls-2" d="M282,0l.85,483S203,474.49,123.36,402.79C36.21,324.34-47.35,194.22,31.56,111.26,111.85,26.84,282,0,282,0Z"/></g></g></svg>
         </div>
 
         <div class="benefit">
@@ -187,7 +187,7 @@
         </div>
 
         <div class="stone1">
-            <svg height="300px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 282.89 483"><defs><style>.cls-2{fill:url(#linear-gradient);}</style><linearGradient id="linear-gradient" x1="41.37" y1="143.67" x2="301.92" y2="253.84" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#233a53"/><stop offset="1" stop-color="#122433"/></linearGradient></defs><title>Asset 9</title><g id="Layer_2" data-name="Layer 2"><g id="OBJECTS"><path class="cls-2" d="M282,0l.85,483S203,474.49,123.36,402.79C36.21,324.34-47.35,194.22,31.56,111.26,111.85,26.84,282,0,282,0Z"/></g></g></svg>
+            <svg height="300px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 282.89 483"><defs><style>.cls-2{fill:url(#linear-gradient);}</style><linearGradient id="linear-gradient" x1="41.37" y1="143.67" x2="301.92" y2="253.84" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#233a53"/><stop offset="1" stop-color="#122433"/></linearGradient></defs><g id="Layer_2" data-name="Layer 2"><g id="OBJECTS"><path class="cls-2" d="M282,0l.85,483S203,474.49,123.36,402.79C36.21,324.34-47.35,194.22,31.56,111.26,111.85,26.84,282,0,282,0Z"/></g></g></svg>
         </div>
 
         @if (count($partners) > 0)
