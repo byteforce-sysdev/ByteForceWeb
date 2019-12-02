@@ -77,7 +77,7 @@
                             </a>
                         </div>
                         <div class="bttn btn-email">
-                            <a href="mailto:reach@byteforceid.com" target="_blank">
+                            <a href="mailto:reach@byteforce.id" target="_blank">
                                 <img src="{{ asset('images/email.svg') }}">
                             </a>
                         </div>
@@ -244,7 +244,7 @@
             </div>
             <div class="footer-content">
                 <div>BYTEFORCE 2019</div>
-                <div>reach@byteforceid.com</div>
+                <div>reach@byteforce.id</div>
                 <div class="whatsapp-span"><img src="{{ asset('images/whatsapp.svg') }}" alt="whatsapp"><span>(+62) 857-1438-2715</span></div>
                 <div class="social-icon">
                     <a href="https://www.instagram.com/byteforce.id/" target="_blank">
