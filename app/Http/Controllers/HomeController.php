@@ -41,6 +41,11 @@ class HomeController extends Controller
                     "title" => "Akuato",
                     "image" => asset("images/partners/partner-akuato.png")
                 ),
+                array(
+                    "weblink" => "https://hub.gspace.id/",
+                    "title" => "GSpace",
+                    "image" => asset("images/partners/partner-gspace.png")
+                ),
             )]     // TODO: Placeholder Data
         );
     }

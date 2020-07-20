@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>BYTEFORCE | CTOaaS | Jakarta</title>
-    <meta name="description" content="We are a CTO-as-a-service company in Jakarta. We provide technological expertise from a CTO role in a pay-what-you-need modular model."/>
+    <meta name="description" content="We (ByteForce Indonesia) are a CTO-as-a-service company in Jakarta. We provide technological expertise from a CTO role in a pay-what-you-need modular model."/>
 
     <!-- ICON -->
     <link rel="apple-touch-icon" href="{{ asset('images/icon/apple-icon-152x152.png') }}">
@@ -41,7 +41,7 @@
             <div class="box-title">
                 <h1 class="title">BYTEFORCE</h1>
                 <div class="logo">
-                    <img src="{{ asset('images/logobf.svg') }}" alt="byteforce">
+                    <img src="{{ asset('images/logobf2.png') }}" alt="byteforce">
                 </div>
             </div>
 
@@ -57,7 +57,7 @@
                     <div class="drow drow-override">
                         <div class="bttn btnmodal" id="relativeButton">Contact Us</div>
                         <div class="bttn btn-wa">
-                            <a href="https://wa.me/6285714382715" target="_blank">
+                            <a href="https://wa.me/6281289973880" target="_blank">
                                 <img src="{{ asset('images/whatsapp.svg') }}">
                             </a>
                         </div>
@@ -185,7 +185,7 @@
 
         @if (count($partners) > 0)
             <div class="our-works">
-                <div class="title-header">Our Past Partnerships</div>
+                <div class="title-header">Our Partnerships</div>
                 <div class="gridc centerized">
                     @for ($i = 0; $i < count($partners); $i++)
                         <a href="{{ $partners[$i]["weblink"] }}">
@@ -228,13 +228,18 @@
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1350 422"><defs><style>.cls-1{fill:#ffffff;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="OBJECTS"><path class="cls-1" d="M0,0H1350V26a461.45,461.45,0,0,1-32,35.08,47.62,47.62,0,0,1-3.55,4.1c-14.41,14.1-31,25.22-48.61,34.77-45.16,24.48-93.84,37.56-144.54,43.93-25.3,3.18-50.69,4.53-76.19,5.17-15.65.39-31.32,1.08-46.94.6-26.46-.81-52.94-.83-79.38-2-22.62-1-45.24-1.47-67.88-2-18.48-.45-37-.87-55.44-.81-44.88.16-89.51,3.53-133.73,11.31-29.81,5.24-58.44,14.79-86.71,25.41-45.66,17.16-89,39.28-131.55,62.9-43.43,24.07-85.76,50.06-129.18,74.16-53.55,29.74-108.27,56.89-166.8,75.59A614,614,0,0,1,25,419.9c-6.13.65-22,2.1-25,2.1"/></g></g></svg>
             </div>
             <div class="footer-content">
-                <div>BYTEFORCE 2019</div>
+                <div>BYTEFORCE 2020</div>
                 <div>reach@byteforce.id</div>
-                <div class="whatsapp-span"><img src="{{ asset('images/whatsapp.svg') }}" alt="whatsapp"><span>(+62) 857-1438-2715</span></div>
+                <div class="whatsapp-span"><img src="{{ asset('images/whatsapp.svg') }}" alt="whatsapp"><span>(+62) 812-8997-3880</span></div>
                 <div class="social-icon">
                     <a href="https://www.instagram.com/byteforce.id/" target="_blank">
                         <img src="{{ asset('images/insta.svg') }}" alt="instagram">
                     </a>
+
+                    <a href="https://id.linkedin.com/company/byteforceid" target="_blank">
+                        <img src="{{ asset('images/linkedin.svg') }}" alt="linkedin">
+                    </a>
+
                 </div>
             </div>
         </div>

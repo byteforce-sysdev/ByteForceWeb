@@ -160,7 +160,7 @@ input{
 }
 
 .logo img{
-  height: 100px;
+  height: 110px;
 }
 
 .linebox{
@@ -310,7 +310,7 @@ input{
 }
 
 .partner-box{
-  height: 130px;
+  height: 120px;
   background: #122433;
   background-size: contain !important;
   background-repeat: no-repeat !important;
@@ -368,11 +368,12 @@ input{
 
 .whatsapp-span{
   display: inline-block;
+  margin-top: 10px;
 }
 
 .whatsapp-span img{
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
   margin-right: 5px;
 }
 
@@ -380,8 +381,10 @@ input{
   margin-top: 20px;
 }
 .social-icon img{
-  height: 35px;
+  height: 30px;
+  margin-right: 20px;
 }
+
 
 .modal{
   position: fixed;
