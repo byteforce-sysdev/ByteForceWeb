@@ -46,6 +46,11 @@ class HomeController extends Controller
                     "title" => "GSpace",
                     "image" => asset("images/partners/partner-gspace.png")
                 ),
+                array(
+                    "weblink" => "https://salesdirector.id/",
+                    "title" => "SDI",
+                    "image" => asset("images/partners/partner-sdi.png")
+                ),
             )]     // TODO: Placeholder Data
         );
     }
