@@ -8,6 +8,8 @@
   src: url('../fonts/Rmed.ttf')
 }
 
+$secondcolor:#58ca65;
+
 body{
   padding: 0;
   margin:0;
@@ -54,13 +56,13 @@ input{
 
 .wave1{
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   width: 100%;
 }
 
 .wave2{
   position: absolute;
-  bottom: 43px;
+  bottom: 42px;
   right: 0;
   width: 98%;
   opacity: 0.3;
@@ -68,7 +70,7 @@ input{
 
 .wave3{
   position: absolute;
-  bottom: 47px;
+  bottom: 46px;
   right: 0;
   width: 98%;
   opacity: 0.1;
@@ -103,31 +105,62 @@ input{
   margin-top: 10px;
 }
 
+.buttons-inline{
+  display: inline-block;
+}
+
 .bttn{
   padding: 10px 20px;
   width: 130px;
   text-align: center;
   cursor: pointer;
-  background: yellowgreen;
+  background: $secondcolor;
   color: white;
   border-radius: 10px;
   border: none;
+  transition: 0.3s;
 }
 
-#btnmodal{
+.bttn.bttn-disabled {
+  pointer-events: none;
+  background-color: grey;
+}
+
+.btnmodal{
+  position: relative;
+  z-index: 100;
+  margin-top: 15px;
+}
+
+.btn-wa, .btn-email {
+  width: auto;
+  z-index: 100;
+  margin-top: 15px;
+  margin-left: 20px;
+}
+
+.btn-wa img, .btn-email img{
+  width: 25px;
+  height: 25px;
+}
+
+.btn-modal-fixed {
   position: fixed;
   bottom: 20px;
   right: 20px;
   z-index: 100;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s;
 }
 
 .bttn:hover{
-  background: #122433;
+  background: #33a13f;
   color: #ffffff;
 }
 
 .logo img{
-  height: 100px;
+  height: 110px;
 }
 
 .linebox{
@@ -178,7 +211,7 @@ input{
   height: 175px;
   width: 125px;
   box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.3);
-  margin:0 20px;
+  margin:0 15px;
   padding: 10px;
   padding-top:35px;
   margin-bottom: 20px;
@@ -243,7 +276,10 @@ input{
 }
 
 .cleftin{
-  margin-top: 90px;
+  margin-top: 70px;
+}
+.cleftin .left-indent {
+  margin-left: 20px;
 }
 
 .rocket img{
@@ -256,7 +292,7 @@ input{
 }
 .rocket{
   text-align: center;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 .skyline{
   text-align: center;
@@ -267,10 +303,18 @@ input{
   text-align: center;
 }
 
+.gridc{
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px;
+  gap: 10px;
+}
+
 .partner-box{
-  height: 200px;
-  width:  200px;
+  height: 120px;
   background: #122433;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
   margin: 5px 5px;
 }
 
@@ -291,6 +335,8 @@ input{
   font-size: 26px;
   color:#122433;
   font-family: robotmed;
+  margin-top: 15px;
+  margin-bottom: 25px;
 }
 
 .footer{
@@ -320,12 +366,25 @@ input{
   transform: translate(-50%,-50%);
 }
 
+.whatsapp-span{
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.whatsapp-span img{
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+}
+
 .social-icon{
   margin-top: 20px;
 }
 .social-icon img{
-  height: 35px;
+  height: 30px;
+  margin-right: 20px;
 }
+
 
 .modal{
   position: fixed;
@@ -333,12 +392,27 @@ input{
   height: 100%;
   overflow: auto !important;
   background-color: rgba(0,0,0,0.4);
-  padding-top: 80px;
+  //padding-top: 80px;
 
 }
 
+@keyframes slidein {
+  from {
+    top:-300px;
+    opacity: 0;
+  }
+
+  to {
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+}
+
 .inside-modal{
-  position: relative;
+  position: absolute;
   margin:auto;
   width: 60%;
   background: white;
@@ -347,6 +421,10 @@ input{
   min-height: 450px;
   border-radius: 10px;
 
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .drow{
@@ -392,18 +470,6 @@ input{
   float:right;
 }
 
-@keyframes slidein {
-  from {
-    top:-300px;
-    opacity: 0;
-  }
-
-  to {
-    top:0;
-    opacity: 1;
-  }
-}
-
 .close{
   font-size:28px !important;
   padding-top: 20px;
@@ -426,15 +492,15 @@ input{
   }
   .wave1{
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     width: 100%;
   }
   .wave2{
-    bottom: 14px;
+    bottom: 10px;
     width: 100%;
   }
   .wave3{
-    bottom: 16px;
+    bottom: 12px;
     width: 100%;
   }
   .works-grid{
@@ -464,8 +530,11 @@ input{
   .chip img{
     height: 120px;
   }
-  .cleftin{
-    margin-top: 70px;
+  .cleftin {
+    margin-top: 50px;
+  }
+  .cleftin .left-indent {
+    margin-left: 10px;
   }
   .box-feature:nth-child(even){
     margin-top: 0px;
@@ -482,6 +551,7 @@ input{
   }
   .ctoaas{
     margin-left: 30px;
+    margin-top: 20px;
   }
   .inside-modal{
     width: 90%;
@@ -494,6 +564,12 @@ input{
   }
   .drow{
     flex-direction: column;
+  }
+  .drow.drow-override{
+    flex-direction: row;
+  }
+  .gridc{
+    grid-template-columns: 200px;
   }
 
 }
@@ -544,6 +620,22 @@ input{
 
   .box-feature{
     margin:0 10px;
+  }
+
+}
+
+@media screen and (min-width:1440px){
+  .desc-word{
+    font-size:24px;
+  }
+  .img-phone img{
+    height: 500px;
+  }
+  .title{
+    font-size: 44px;
+  }
+  .ctoaas-desc{
+    max-width: 630px;
   }
 
 }
