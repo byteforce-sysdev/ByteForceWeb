@@ -25,10 +25,10 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!--JS-->
-    <script src="{{ mix('js/app.js') }}"></script>
+    <script src="{{ mix('js/app.js') }}" defer></script>
     <script src="{{ asset('js/jquery.js') }}"></script>
     <script src="{{ asset('js/bootstrap.min.js')  }}"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
     <!-- <script src="https://unpkg.com/popper.js"></script> -->
 
     <script src="{{ asset('js/home.js') }}"></script>
@@ -188,7 +188,7 @@
                 <div class="title-header">Our Partnerships</div>
                 <div class="gridc centerized">
                     @for ($i = 0; $i < count($partners); $i++)
-                        <a href="{{ $partners[$i]["weblink"] }}">
+                        <a href="{{ $partners[$i]["weblink"] }}" target="_blank" rel="noopener noreferrer">
                             <div class="partner-box" data-aos="fade-up" data-aos-delay="{{50* $i}}" style="background: url('{{ $partners[$i]["image"] }}')">
                             </div>
                         </a>
