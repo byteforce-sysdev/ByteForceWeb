@@ -260,21 +260,26 @@
                         <label>Message</label>
                         <textarea id="contactMessage" class="form-control" rows="5"></textarea>
                     </div>
-                    <div class="drow evenly">
-                        <div>
-                            <div class="form-group">
-                                <label>Name</label>
-                                <input id="contactName" type="text" class="form-control" placeholder="Enter name">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div>
+                                <div class="form-group">
+                                    <label>Name</label>
+                                    <input id="contactName" type="text" class="form-control" placeholder="Enter name">
+                                </div>
                             </div>
                         </div>
-                        <div>
-                            <div class="form-group">
-                                <label>Email</label>
-                                <input id="contactEmail" type="email" class="form-control" placeholder="Enter email">
-                                <small class="form-text text-muted">We don't share your email to anyone.</small>
+                        <div class="col-lg-6">
+                            <div>
+                                <div class="form-group">
+                                    <label>Email</label>
+                                    <input id="contactEmail" type="email" class="form-control" placeholder="Enter email">
+                                    <small class="form-text text-muted">We don't share your email to anyone.</small>
+    
+                                </div>
+                            </div>
+                        </div>
 
-                            </div>
-                        </div>
                     </div>
                     <small id="messageError" class="form-text text-danger" >Please complete the form.</small>
                     <div class="send-wrapper">
