@@ -12,7 +12,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>BYTEFORCE | CTOaaS | Jakarta</title>
+    <title>BYTEFORCE | CTOaaS | Indonesia</title>
     <meta name="description" content="We (ByteForce Indonesia) are a CTO-as-a-service company in Jakarta. We provide technological expertise from a CTO role in a pay-what-you-need modular model."/>
 
     <!-- ICON -->
@@ -46,12 +46,12 @@
             </div>
 
             <div class="ctoaas">
-                <div class="title">CTOaaS</div>
+                <div class="title">CTO-as-a-Service</div>
                 <div class="ctoaas-desc">
                     <div class="desc-word">
-                    Our CTOaaS is a service which provides technological expertise
-                    from a CTO role in a pay-what-you-need modular model.
-                    You can choose what services are required from the CTOaaS
+                    Byteforce is a software house with a CTO-as-a-Service model.
+                    We provide technological expertise from a CTO role in a pay-what-you-need modular menu.
+                    You can choose what services are required from our CTOaaS
                     for your business.
                     </div>
                     <div class="drow drow-override">
@@ -139,19 +139,19 @@
                 <div class="col-md-4 benefit-box"  data-aos="fade-up" data-aos-delay="50">
                     <img src="{{ asset('images/select.svg') }}" alt="Maintenance">
                     <div class="benefit-desc">
-                        Make sure you utilize the correct tech and minimise tech risks in the future
+                        Tech stack consulting to minimise tech risks in the future
                     </div>
                 </div>
                 <div class="col-md-4 benefit-box"  data-aos="fade-up" data-aos-delay="100">
                     <img src="{{ asset('images/team-tech.svg') }}" alt="Maintenance">
                     <div class="benefit-desc">
-                        Access to a team of tech savvy enthusiasts
+                        Access to a dedicated team of tech savvy enthusiasts
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="title-header">Who This Service is For</div>
+        <div class="title-header">Who this Service is for</div>
         <div class="whofor">
             <div class=" centerized row">
                 <div class="chip cleft" data-aos="fade-right">
@@ -185,7 +185,7 @@
 
         @if (count($partners) > 0)
             <div class="our-works">
-                <div class="title-header">Our Partnerships</div>
+                <div class="title-header">Our Partners</div>
                 <div class="gridc centerized">
                     @for ($i = 0; $i < count($partners); $i++)
                         <a href="{{ $partners[$i]["weblink"] }}" target="_blank" rel="noopener noreferrer">
@@ -228,11 +228,14 @@
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1350 422"><defs><style>.cls-1{fill:#ffffff;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="OBJECTS"><path class="cls-1" d="M0,0H1350V26a461.45,461.45,0,0,1-32,35.08,47.62,47.62,0,0,1-3.55,4.1c-14.41,14.1-31,25.22-48.61,34.77-45.16,24.48-93.84,37.56-144.54,43.93-25.3,3.18-50.69,4.53-76.19,5.17-15.65.39-31.32,1.08-46.94.6-26.46-.81-52.94-.83-79.38-2-22.62-1-45.24-1.47-67.88-2-18.48-.45-37-.87-55.44-.81-44.88.16-89.51,3.53-133.73,11.31-29.81,5.24-58.44,14.79-86.71,25.41-45.66,17.16-89,39.28-131.55,62.9-43.43,24.07-85.76,50.06-129.18,74.16-53.55,29.74-108.27,56.89-166.8,75.59A614,614,0,0,1,25,419.9c-6.13.65-22,2.1-25,2.1"/></g></g></svg>
             </div>
             <div class="footer-content">
-                <div>BYTEFORCE 2020</div>
-                <div>reach@byteforce.id</div>
-                <div class="whatsapp-span"><img src="{{ asset('images/whatsapp.svg') }}" alt="whatsapp"><span>(+62) 812-8997-3880</span></div>
+                <div class="footer-text">BYTEFORCE 2020</div>
+                <div class="footer-text">reach@byteforce.id</div>
                 <div class="social-icon">
-                    <a href="https://www.instagram.com/byteforce.id/" target="_blank">
+                    <a href="https://wa.me/6281289973880" target="_blank">
+                        <img src="{{ asset('images/whatsapp.svg') }}" alt="whatsapp">
+                    </a>
+
+                    <a href="https://www.instagram.com/byteforce.id" target="_blank">
                         <img src="{{ asset('images/insta.svg') }}" alt="instagram">
                     </a>
 
@@ -274,7 +277,7 @@
                                 <div class="form-group">
                                     <label>Email</label>
                                     <input id="contactEmail" type="email" class="form-control" placeholder="Enter email">
-                                    <small class="form-text text-muted">We don't share your email to anyone.</small>
+                                    <small class="form-text text-muted">We won't share your email to anyone.</small>
     
                                 </div>
                             </div>
