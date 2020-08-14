@@ -251,7 +251,7 @@
             <div class="drow">
                 <div class="blue">
                     <div class="logo logocenter">
-                        <img src="{{ asset('images/logobf.svg') }}" alt="">
+                        <img src="{{ asset('images/logobf2.png') }}" alt="">
                     </div>
                 </div>
                 <div class="whit">
