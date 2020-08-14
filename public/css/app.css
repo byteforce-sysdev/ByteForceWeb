@@ -81,6 +81,7 @@ input {
   font-size: 36px;
   letter-spacing: 1px;
   margin-right: 30px;
+  font-style: italic;
 }
 .ctoaas {
   color: white;
@@ -169,7 +170,7 @@ input {
 }
 
 .content {
-  padding-top: 60px;
+  padding-top: 0;
   padding-bottom: 5px;
   margin: 0 auto;
   position: relative;
@@ -226,6 +227,7 @@ input {
 
 .benefit-box img {
   height: 110px;
+  margin-bottom: 20px;
 }
 
 .benefit-desc {
@@ -305,18 +307,22 @@ input {
 }
 
 .circle {
-  margin-bottom: 20px;
 }
 
 .circle img {
   height: 200px;
-  margin: 0 35px;
+  margin: 20px 35px;
+  filter: grayscale(100%);
+  transition: 0.3s;
+}
+.circle img:hover{
+  filter: grayscale(0);
 }
 
 .title-header {
   font-size: 26px;
   color: #122433;
-  font-family: robotmed;
+  font-family: robotMed;
   margin-top: 15px;
   margin-bottom: 25px;
 }
@@ -366,7 +372,7 @@ input {
 
 .social-icon img {
   height: 30px;
-  margin-right: 20px;
+  margin: 0 10px;
 }
 
 .modal {
@@ -619,7 +625,8 @@ input {
 
 @media screen and (min-width: 1440px) {
   .desc-word {
-    font-size: 24px;
+    font-size: 23px;
+    letter-spacing: 0.5px;
   }
 
   .img-phone img {
@@ -645,5 +652,9 @@ input {
 
 .our-team > .row {
   margin: 0;
+}
+
+.footer-text{
+  letter-spacing: 1px;
 }
 
