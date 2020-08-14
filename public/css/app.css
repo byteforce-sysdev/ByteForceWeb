@@ -14,38 +14,31 @@ body {
   font-family: robotReg, Arial, Helvetica, sans-serif;
   overflow-x: hidden;
 }
-
 ul {
   text-decoration: none;
   padding: 0;
 }
-
 li {
   display: inline-block;
 }
-
 input {
   min-width: 220px;
 }
-
 .landing-background {
   background-color: rgba(18, 36, 51, 0.85);
   height: 100%;
   min-height: -webkit-fill-available;
 }
-
 .back {
   background: transparent url(/images/back.jpg?6ca2d7ff9566efe892f7c9268a48b90f) no-repeat fixed center;
   height: 99vh;
   position: relative;
 }
-
 .stone {
   position: absolute;
   right: 0;
   top: 100px;
 }
-
 .stone1 {
   position: absolute;
   left: 0;
@@ -53,13 +46,11 @@ input {
   -webkit-transform: scaleX(-1);
           transform: scaleX(-1);
 }
-
 .wave1 {
   position: absolute;
   bottom: -1px;
   width: 100%;
 }
-
 .wave2 {
   position: absolute;
   bottom: 42px;
@@ -67,7 +58,6 @@ input {
   width: 98%;
   opacity: 0.3;
 }
-
 .wave3 {
   position: absolute;
   bottom: 46px;
@@ -75,7 +65,6 @@ input {
   width: 98%;
   opacity: 0.1;
 }
-
 .box-title {
   display: -webkit-box;
   display: flex;
@@ -87,30 +76,26 @@ input {
   padding-top: 50px;
   padding-left: 20%;
 }
-
 .title {
   color: white;
   font-size: 36px;
   letter-spacing: 1px;
   margin-right: 30px;
+  font-style: italic;
 }
-
 .ctoaas {
   color: white;
   margin-left: 20%;
   margin-top: 70px;
   padding-right: 20px;
 }
-
 .ctoaas-desc {
   max-width: 500px;
   margin-top: 10px;
 }
-
 .buttons-inline {
   display: inline-block;
 }
-
 .bttn {
   padding: 10px 20px;
   width: 130px;
@@ -123,18 +108,15 @@ input {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-
 .bttn.bttn-disabled {
   pointer-events: none;
   background-color: grey;
 }
-
 .btnmodal {
   position: relative;
   z-index: 100;
   margin-top: 15px;
 }
-
 .btn-wa,
 .btn-email {
   width: auto;
@@ -142,13 +124,11 @@ input {
   margin-top: 15px;
   margin-left: 20px;
 }
-
 .btn-wa img,
 .btn-email img {
   width: 25px;
   height: 25px;
 }
-
 .btn-modal-fixed {
   position: fixed;
   bottom: 20px;
@@ -159,37 +139,30 @@ input {
   -webkit-transition: visibility 0s, opacity 0.3s;
   transition: visibility 0s, opacity 0.3s;
 }
-
 .bttn:hover {
   background: #33a13f;
   color: #ffffff;
 }
-
 .logo img {
   height: 110px;
 }
-
 .linebox {
   height: 220px;
   border-right: 3px solid white;
 }
-
 .img-phone {
   position: absolute;
   right: 17%;
   top: 30%;
 }
-
 .img-phone img {
   height: 370px;
 }
-
 .menub {
   position: absolute;
   bottom: 7px;
   right: 15px;
 }
-
 .menub li {
   margin: 0 1.2em;
   color: #122433;
@@ -197,7 +170,7 @@ input {
 }
 
 .content {
-  padding-top: 60px;
+  padding-top: 0;
   padding-bottom: 5px;
   margin: 0 auto;
   position: relative;
@@ -254,6 +227,7 @@ input {
 
 .benefit-box img {
   height: 110px;
+  margin-bottom: 20px;
 }
 
 .benefit-desc {
@@ -333,18 +307,22 @@ input {
 }
 
 .circle {
-  margin-bottom: 20px;
 }
 
 .circle img {
   height: 200px;
-  margin: 0 35px;
+  margin: 20px 35px;
+  filter: grayscale(100%);
+  transition: 0.3s;
+}
+.circle img:hover{
+  filter: grayscale(0);
 }
 
 .title-header {
   font-size: 26px;
   color: #122433;
-  font-family: robotmed;
+  font-family: robotMed;
   margin-top: 15px;
   margin-bottom: 25px;
 }
@@ -394,7 +372,7 @@ input {
 
 .social-icon img {
   height: 30px;
-  margin-right: 20px;
+  margin: 0 10px;
 }
 
 .modal {
@@ -438,7 +416,6 @@ input {
 .inside-modal {
   position: absolute;
   margin: auto;
-  width: 60%;
   background: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -webkit-animation: slidein 0.4s ease-in-out;
@@ -477,154 +454,120 @@ input {
           transform: translate(-50%, -50%);
   text-align: center;
 }
-
 .whit {
   display: inline;
   padding: 50px;
   width: 100%;
 }
-
 .pro-form {
   width: 100%;
   border-radius: 5px;
 }
-
-.evenly {
-  -webkit-box-pack: justify;
-          justify-content: space-between;
-  margin-top: 25px;
-}
-
 .send-wrapper {
   margin-top: 30px;
   float: right;
 }
-
 .close {
-  font-size: 28px !important;
-  padding-top: 20px;
-  padding-right: 30px;
+  font-size: 32px !important;
+  padding: 10px;
   position: absolute;
-  right: 0px;
+  right: 25px;
+  top: 10px;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 425px) {
   .menub {
     bottom: -12px;
   }
-
   .img-phone {
     display: none;
   }
-
   .back {
     height: 85vh;
   }
-
   .wave1 {
     position: absolute;
     bottom: -1px;
     width: 100%;
   }
-
   .wave2 {
     bottom: 10px;
     width: 100%;
   }
-
   .wave3 {
     bottom: 12px;
     width: 100%;
   }
-
   .works-grid {
     width: 300px;
     margin: 0 auto;
   }
-
   .pop {
     width: 100px;
     height: 100px;
   }
-
   .content {
     padding: 0px 10px;
     padding-top: 50px;
     overflow-x: hidden;
   }
-
   .stone {
     display: none;
   }
-
   .stone1 {
     display: none;
   }
-
   .chip {
     height: 300px;
     width: 300px;
     font-size: 16px;
   }
-
   .chip img {
     height: 120px;
   }
-
   .cleftin {
     margin-top: 50px;
   }
-
   .cleftin .left-indent {
     margin-left: 10px;
   }
-
   .box-feature:nth-child(even) {
     margin-top: 0px;
   }
-
   .push {
     margin-left: 50px;
   }
-
   .benefit {
     margin-top: 100px;
     margin-bottom: 100px;
   }
-
   .box-title {
     padding-left: 30px;
   }
-
   .ctoaas {
     margin-left: 30px;
     margin-top: 20px;
   }
-
   .inside-modal {
     width: 90%;
   }
-
   .blue {
     display: none;
   }
-
   .whit {
     padding: 20px;
   }
-
   .drow {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
             flex-direction: column;
   }
-
   .drow.drow-override {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
             flex-direction: row;
   }
-
   .gridc {
     grid-template-columns: 200px;
   }
@@ -682,7 +625,8 @@ input {
 
 @media screen and (min-width: 1440px) {
   .desc-word {
-    font-size: 24px;
+    font-size: 23px;
+    letter-spacing: 0.5px;
   }
 
   .img-phone img {
@@ -708,5 +652,9 @@ input {
 
 .our-team > .row {
   margin: 0;
+}
+
+.footer-text{
+  letter-spacing: 1px;
 }
 
