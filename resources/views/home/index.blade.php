@@ -57,7 +57,7 @@
                     <div class="drow drow-override">
                         <div class="bttn btnmodal" id="relativeButton">Contact Us</div>
                         <div class="bttn btn-wa">
-                            <a href="https://wa.me/6281289973880" target="_blank">
+                            <a href="https://wa.me/6285156658092" target="_blank">
                                 <img src="{{ asset('images/whatsapp.svg') }}">
                             </a>
                         </div>
@@ -231,7 +231,7 @@
                 <div class="footer-text">BYTEFORCE 2020</div>
                 <div class="footer-text">reach@byteforce.id</div>
                 <div class="social-icon">
-                    <a href="https://wa.me/6281289973880" target="_blank">
+                    <a href="https://wa.me/6285156658092" target="_blank">
                         <img src="{{ asset('images/whatsapp.svg') }}" alt="whatsapp">
                     </a>
 
