@@ -2,7 +2,7 @@
 
 BUILD=$1
 REGISTRY=images.docker.byteforce.id
-REPO=repository/vibranium-images
+REPO=repository/byteforceid-images
 
 docker login -u gitlabcicd -p Byteforce2020 $REGISTRY
 docker build -t byteforceid/byteforce-id-website .
