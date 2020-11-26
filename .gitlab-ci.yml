@@ -1,0 +1,27 @@
+image: alpine:latest
+
+variables:
+   APP_VERSION: "1.0.0"
+
+cache:
+   paths:
+      - node_modules/
+      - vendor/
+
+stages:
+   - production
+
+production:jdk8:
+  stage: production
+  services:
+    - docker:dind
+  script:
+    - echo "Uploading docker file build"
+    - apk update && apk add --no-cache docker-cli
+    - chmod +x ./docker_upload.sh
+    - ./docker_upload.sh latest
+  only:
+    - tags
+    - master
+  tags:
+    - gitlab-org-docker
