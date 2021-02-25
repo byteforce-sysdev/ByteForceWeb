@@ -57,7 +57,7 @@
                     <div class="drow drow-override">
                         <div class="bttn btnmodal" id="relativeButton">Contact Us</div>
                         <div class="bttn btn-wa">
-                            <a href="https://wa.me/6285156658092" target="_blank">
+                            <a href="https://wa.me/6285158900947" target="_blank">
                                 <img src="{{ asset('images/whatsapp.svg') }}">
                             </a>
                         </div>
@@ -228,10 +228,10 @@
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1350 422"><defs><style>.cls-1{fill:#ffffff;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="OBJECTS"><path class="cls-1" d="M0,0H1350V26a461.45,461.45,0,0,1-32,35.08,47.62,47.62,0,0,1-3.55,4.1c-14.41,14.1-31,25.22-48.61,34.77-45.16,24.48-93.84,37.56-144.54,43.93-25.3,3.18-50.69,4.53-76.19,5.17-15.65.39-31.32,1.08-46.94.6-26.46-.81-52.94-.83-79.38-2-22.62-1-45.24-1.47-67.88-2-18.48-.45-37-.87-55.44-.81-44.88.16-89.51,3.53-133.73,11.31-29.81,5.24-58.44,14.79-86.71,25.41-45.66,17.16-89,39.28-131.55,62.9-43.43,24.07-85.76,50.06-129.18,74.16-53.55,29.74-108.27,56.89-166.8,75.59A614,614,0,0,1,25,419.9c-6.13.65-22,2.1-25,2.1"/></g></g></svg>
             </div>
             <div class="footer-content">
-                <div class="footer-text">BYTEFORCE 2020</div>
-                <div class="footer-text">reach@byteforce.id</div>
+                <div class="footer-text">Copyright © BYTEFORCE 2020</div>
+                <div class="footer-text">PT Tunas Nusantara Indonesia</div>
                 <div class="social-icon">
-                    <a href="https://wa.me/6285156658092" target="_blank">
+                    <a href="https://wa.me/6285158900947" target="_blank">
                         <img src="{{ asset('images/whatsapp.svg') }}" alt="whatsapp">
                     </a>
 
