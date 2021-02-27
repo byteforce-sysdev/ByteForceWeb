@@ -17,7 +17,7 @@ production:
     - docker:dind
   script:
     - echo "Uploading docker file build"
-    - apk update && apk add --no-cache docker-cli
+    #- apk update && apk add --no-cache docker-cli
     - chmod +x ./docker_upload.sh
     - ./docker_upload.sh latest
   only:
