@@ -14,7 +14,7 @@ stages:
 production:
   stage: production
   services:
-    - docker:dind
+    - docker:19.03-dind
   script:
     - echo "Uploading docker file build"
     - apk update && apk add --no-cache docker-cli
