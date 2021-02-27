@@ -14,12 +14,12 @@ stages:
 production:
   stage: production
   services:
-    - docker:19.03-dind
+    - docker:dind
   script:
     - echo "Uploading docker file build"
     - apk update && apk add --no-cache docker-cli
     - chmod +x ./docker_upload.sh
-    - sh ./docker_upload.sh latest
+    - ./docker_upload.sh latest
   only:
     - tags
     - master
