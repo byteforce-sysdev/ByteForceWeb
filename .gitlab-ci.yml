@@ -20,7 +20,7 @@ production:jdk8:
     - apk update && apk add --no-cache docker-cli
     - chmod +x ./docker_upload.sh
     - ls -lh
-    - ./docker_upload.sh latest
+    - docker_upload.sh latest
   only:
     - tags
     - master
